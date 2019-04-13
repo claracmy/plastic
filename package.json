@@ -3,7 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
     "install": "^0.12.2",
+    "mongoose": "^5.5.1",
+    "morgan": "^1.9.1",
     "npm": "^6.5.0",
     "react": "^16.5.2",
     "react-cookie": "^3.0.8",
