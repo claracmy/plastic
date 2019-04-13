@@ -21,7 +21,7 @@ function login(req, res, next) {
       const token = jwt.sign({ userId: user.id }, secret, { expiresIn: "1hr" });
       user["currentToken"] = token;
       User.findOneAndUpdate({ email: req.body.email }, user, { upsert: true }); // Save token to database
-      return res.json({ message: `Welcome back ${user.name}`, token });
+      return res.json({ message: `Welcome back`, token });
     })
     .catch(next);
 }

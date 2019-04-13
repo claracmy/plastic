@@ -1,5 +1,5 @@
 import React from "react";
-import LoginForm from "./LoginForm";
+import LoginForm from "./loginForm";
 import Axios from "axios";
 
 import Auth from "../../lib/Auth";
@@ -26,7 +26,7 @@ class Login extends React.Component {
         debugger;
         alert(res);
         Auth.setToken(res.data.token);
-        this.props.history.push("/");
+        // this.props.history.push("/");s
       })
       .catch(err => console.log(err));
   };
