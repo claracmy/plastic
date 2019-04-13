@@ -3,12 +3,11 @@ const express = require("express");
 var cors = require("cors");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
-// const Data = require("./data");
-const { port, dbURI } = require("../config/environment");
+const router = require("./config/routes");
+const { port, dbURI } = require("./config/environment");
 
 const app = express();
 app.use(cors());
-const router = express.Router();
 
 mongoose.connect(dbURI, { useMongoClient: true });
 
