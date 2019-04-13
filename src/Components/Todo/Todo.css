@@ -1,0 +1,47 @@
+.icon-close {
+    right: 0;
+    width: 25px;
+    height: 25px;
+    float: right;
+    position: relative;
+    z-index: 99;
+    margin: 5px;
+}
+
+.icon-close:hover{
+   animation: rotation 1s;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+}
+to {
+        -webkit-transform: rotate(359deg);
+}
+  }
+
+  @-moz-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+}
+to {
+        -webkit-transform: rotate(359deg);
+}
+  }
+  @-o-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+}
+to {
+        -webkit-transform: rotate(359deg);
+}
+  }
+  @keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+}
+to {
+        -webkit-transform: rotate(359deg);
+}
+  }
