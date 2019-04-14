@@ -30,12 +30,13 @@ const LoginForm = ({ handleChange, handleSubmit, user }) => {
            margin: '10px 0' }}
             id="password"
             name="password"
+            type="password"
             value={user.password}
             onChange={password => handleChange(password)}
           />
         </label>
-        <div style={{ textAlign: 'center'}}>
-      <button style={{ borderRadius: '5px', padding: '10px 10px', width: '150px',  color: 'white', fontWeight: 'bold', fontSize: '14px', height: '50px', display: 'block', marginTop: '40px', backgroundColor: '#04afa8' }} type="submit">Login</button>
+        <div style={{ width: '100%' }}>
+      <button style={{ borderRadius: '5px', padding: '10px 10px', width: '150px',  color: 'white', fontWeight: 'bold', fontSize: '14px', height: '50px', display: 'block', margin: '40px auto', backgroundColor: '#04afa8' }} type="submit">Login</button>
       </div>
     </form>
       </div>

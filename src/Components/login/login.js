@@ -31,12 +31,17 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div style={{ height: "100%", width: "100%", display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ height: "100%", width: "100%", display: 'flex',  flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ display: 'block'}}>
+          <img src="https://i.imgur.com/ilAfmad.png" height='120px'/>
+        </div>
+        <div style={{ display: 'block'}}>
         <LoginForm
           user={this.state.user}
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
         />
+        </div>
       </div>
     );
   }

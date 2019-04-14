@@ -110,9 +110,23 @@ const Form = ({ handleChange, handleSubmit, order }) => {
             />
           </label>
           <div style={{ textAlign: 'center'}}>
-        <button style={{ borderRadius: '5px', padding: '10px 10px', width: '150px',  color: 'white', fontWeight: 'bold', fontSize: '14px', height: '50px', display: 'block', marginTop: '40px', backgroundColor: '#04afa8' }} type="submit">Submit</button>
+        <button style={{
+          borderRadius: '5px',
+          padding: '10px 10px', 
+          width: '150px',
+          color: 'white',
+          fontWeight: 'bold',
+          fontSize: '14px',
+          height: '50px',
+          display: 'block',
+          marginTop: '40px',
+          backgroundColor: '#04afa8'
+        }}
+        type="submit">
+          Submit
+        </button>
         </div>
-      </form>
+        </form>
         </div>
     );
   };

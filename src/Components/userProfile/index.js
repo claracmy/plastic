@@ -6,22 +6,21 @@ class UserProfile extends React.Component {
 
     render() {
          return (
-            <div style={{ height: "100%", width: "100%", display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
-                <h2 style={{ display: 'block' }}>About You </h2>
-              <div> Current Number of order you did </div>
-              <div style={{ display: 'block' }}> 2 </div>
-              <div></div>
-              <div style={{ display: 'block' }}> Number of orders remaining before your get a free voucher </div>
-              <ProgressBar
-              percentage={40}
-              />
-              <div style={{ display: 'block' }}> 8 </div>
-              <div  style={{ display: 'block' }}> Thank you for helping us make the world plastic free! </div>
-              <div style={{ textAlign: 'center'}}>
-
-              <button style={{ borderRadius: '5px', padding: '10px 10px', width: '150px',  color: 'white', fontWeight: 'bold', fontSize: '14px', height: '50px', display: 'block', marginTop: '40px', backgroundColor: '#04afa8' }} type="submit">Logout
-              </button>
-            </div>
+            <div style={{ height: "100%", width: "100%", display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between', padding: '30px', textAlign: 'center'}}>
+                <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center', marginBottom: '40px'}}>
+                    <h1 style={{ display: 'block', color: '#035855' }}>Sheldon Cooper</h1>
+                    <img height="120px" style={{borderRadius: '50%'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSirqi-60a5vJbXwM25-U53wAe3yVuXhmtGtE0LoxYLEXn7rzPI"/>
+                    <h2 style={{ display: 'block', marginTop: '20px' }}>Review <span style={{ fontWeight: 'bold', color: '#035855' }}>3</span> more orders to get a free milkshake! </h2>
+                    <ProgressBar />
+                </div>
+                <div style={{ marginTop: '40px'}}>
+                    <h3 style={{ display: 'block' }}> Thank you for helping us make the world plastic free! </h3>
+                    <div style={{ width: '100%'}}>
+                        <button style={{ margin: '0 auto', borderRadius: '5px', padding: '10px 10px', width: '150px',  color: 'white', fontWeight: 'bold', fontSize: '14px', height: '50px', display: 'block', marginTop: '40px', backgroundColor: '#04afa8' }} type="submit">
+                            Logout
+                        </button>
+                    </div>
+                </div>
             </div>
         );
     }

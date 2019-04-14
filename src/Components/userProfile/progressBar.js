@@ -9,6 +9,12 @@ class ProgressBarComponent extends React.Component {
       }
       this.nextStep = this.nextStep.bind(this)
     }
+
+    componentDidMount() {
+      setTimeout(() => this.setState({
+        percentage: 40,
+      }), 500);
+    }
     
     nextStep() {
       if(this.state.percentage === 100) return 
@@ -30,7 +36,7 @@ class ProgressBarComponent extends React.Component {
             height: 20,
             width: 350,
             borderRadius: 50,
-            border: "1px solid #333"}}className="progress-bar">
+            border: "1px solid '#333"}}className="progress-bar">
           <Filler percentage={props.percentage} />
         </div>
       )
@@ -40,7 +46,7 @@ class ProgressBarComponent extends React.Component {
     return <div className="filler" style={{background: "#1DA598",
         height: "100%",
         borderRadius: "inherit",
-        transition: "width .2s ease-in", width: `${props.percentage}%` }} />
+        transition: "width .3s ease-out", width: `${props.percentage}%` }} />
   }
   
 
