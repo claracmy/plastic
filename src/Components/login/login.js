@@ -19,21 +19,19 @@ class Login extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    debugger;
+
     Axios.post("/api/login", this.state.user)
 
       .then(res => {
-        debugger;
-        alert(res);
         Auth.setToken(res.data.token);
-        // this.props.history.push("/");s
       })
+      .then(this.props.history.push("/form"))
       .catch(err => console.log(err));
   };
 
   render() {
     return (
-      <div>
+      <div style={{ height: "100%", width: "100%", display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <LoginForm
           user={this.state.user}
           handleChange={this.handleChange}
