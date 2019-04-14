@@ -4,6 +4,7 @@ const orderSchema = new mongoose.Schema(
   {
     orderId: { type: String, unique: true },
     orderedBy: { type: mongoose.Schema.ObjectId, ref: "User", required: true },
+    restaurant: { type: Object },
     plasticUsage: {
       cutlery: { type: Number },
       container: { type: Number },

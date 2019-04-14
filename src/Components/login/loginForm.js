@@ -5,7 +5,7 @@ const LoginForm = ({ handleChange, handleSubmit, user }) => {
       <div>
     <form className="loginForm" onSubmit={handleSubmit}>
         <label htmlFor="email">
-        <span style={{ fontSize: '16px', display: 'block'}}>Email address:{" "}</span>
+        <span style={{ fontSize: '16px', display: 'block'}}>Email address{" "}</span>
           <input
             style={{  border: 'none',
               borderBottom: 'solid 3px #016c68',
@@ -20,7 +20,7 @@ const LoginForm = ({ handleChange, handleSubmit, user }) => {
           />
         </label>
         <label htmlFor="password">
-        <span style={{ fontSize: '16px', display: 'block' }}>Password:{" "}</span>
+        <span style={{ fontSize: '16px', display: 'block' }}>Password{" "}</span>
           <input
            style={{  border: 'none',
            borderBottom: 'solid 3px #016c68',
