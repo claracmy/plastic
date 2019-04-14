@@ -23,11 +23,10 @@ class FormPage extends React.Component {
       };
     
       handleSubmit = e => {
-        alert(this.state.order.plasticUsage.cutlery);
         e.preventDefault();
     
         Axios.post("/api/orders/new", this.state.form)
-          .then(this.props.history.push("/success"))
+          .then(this.props.history.push(`/users/1`))
           .catch(err => console.log(err));
       };
 

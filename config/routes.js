@@ -6,5 +6,6 @@ const users = require("../backend/user.controller.js");
 router.route("/login").post(auth.login);
 router.route("/orders").get(orders.index);
 router.route("/orders/new").post(orders.create);
+router.route("/users/:id").get(users.show);
 
 module.exports = router;
