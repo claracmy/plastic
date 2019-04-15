@@ -71,13 +71,9 @@ And to monetise the EcoScore idea, we would:
 
 To run this locally, you should have yarn/npm, node and mongo installed. 
 1. Clone the repo
-2. ```
-cd plastic
-```
-3. ```
-yarn build 
-```
-4. on Chrome, open extensions and check `dev mode`. Click `load unpacked` and select the `public` folder within the directory.
-5. On a separate terminal window, run `mongod`.
-6. On a separate terminal window, run `node server.js`
+2. ```cd plastic```
+3. ```yarn build ```
+1. on Chrome, open extensions and check `dev mode`. Click `load unpacked` and select the `public` folder within the directory.
+2. On a separate terminal window, run `mongod`.
+3. On a separate terminal window, run `node server.js`
 
